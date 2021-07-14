@@ -2309,7 +2309,7 @@ CHECK_DEEPER:
 		}
 		if (flat_type->type_kind == TYPE_ARRAY)
 		{
-			expr_rewrite_to_int_const(expr, type_usize, type->array.len);
+			expr_rewrite_to_int_const(expr, type_compint, type->array.len);
 			return true;
 		}
 	}
